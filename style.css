@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.navbar-light{
+    background:linear-gradient(#678d72,#c6d7c3) ;
+   
+}
+/*slider*/
+.carousel-item{
+    height: 100vh;
+    min-height:300px ;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size-: cover;
+    background-size: cover;
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+
+}
+.carousel-caption{
+    top: 300px;
+    bottom: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+.carousel-caption h5{
+    font-size: 100px;
+    font-weight: 700;
+    font-family: Georgia, serif;
+}
+.carousel-caption p{
+    font-size: 18px;
+    top: 2rem;
+}
+
+
+
+.navbar-brand img {
+    width:100px;
+    height: 90px;
+
+
+}
+/*.header{
+    background:linear-gradient(#678d72,#c6d7c3) ;
+}*/
+
+
+/*.navbar {
+    padding : 0 10px !important ;
+}
+*/
+.banner-img{
+    margin: 88px 115px;
+    width: 60%;
+}
+.banner-img img {
+    width: 100%;
+    margin-bottom: -80px;
+}
+.banner{
+    position: relative;
+}
+.banner-title{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+.banner-title h1 {
+    font-size: 55px;
+    background: rgba(80, 79, 79, 0.75);
+    color: #fff;
+    line-height: 70px;
+    padding: 0px 10px 0 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.item img{
+    height: 280px;
+}
+.nos-produits{
+    padding: 100px 0;
+}
+.produits-box{
+    margin: 80px 0;
+}
+.title-style h1{
+    padding: 40px 0;
+}
+.title-style{
+    margin: 0 auto 80px;
+    height: 120px;
+    width: 80% ;
+    max-width: 700px;
+    background:#fff ;
+    position: relative;
+    box-shadow: 0 4px 5px 0 rgba(0,0,50,0.5);
+}
+.title-style::after{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color:#4b7045 ;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+
+}
+.title-style::before{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color:#467b3e ;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+
+}
+.trending-img{
+    position: relative;
+    margin-bottom: 15px;
+}
+.trending-img img{
+    width: 100%;
+}
+.btn-buy{
+    width: 150px;
+    padding: 10px 0;
+    outline: none !important;
+    border: 0;
+    border-radius: 2px;
+    position: absolute;
+    background: rgb(206, 234, 134);
+    left: 50%;
+    bottom: 0;
+    transform:translate(-50%,0) ;
+    transition:.6s ;
+    opacity: 0;
+    z-index: 1;
+}
+.trending-img:hover .btn-buy
+{
+   transform: translate(-50%,50%);
+   bottom: 50%; 
+   opacity: 1;
+}
+.overlay{
+    height: 0;
+    width: 100%;
+    background: #333;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.trending-img:hover .overlay{
+    opacity: .5;
+    height: 100%;
+}
+
+.horairesLocalisation{
+background-image: url(images/parapharma\ fond.jpg);
+background-size: cover;
+background-position: center;
+
+}
+.row{
+    margin: initial !important;
+}
+.subscribe {
+    max-width: 500px ;
+    margin-top: 80px;
+    padding: 60px;
+    background: #ffffff8c;
+    margin-bottom:20px ;
+}
+.horairesLocalisation iframe{
+
+
+margin-top: 80px;
+padding: 10px;
+background: #ffffff8c;
+margin-bottom:20px ;
+
+}
+/*
+.marques{
+    margin: 250px 0 150px 0;
+}
+.marques-img{
+    margin-top: 50px;
+    height: 250px;
+    width: 300px;
+    display: inline-block;
+}
+.marques-img img{
+    width: 100%;
+    height: 100%;
+
+}
+.marques h5{
+    margin-top: 20px;
+    font-weight:bold;
+
+}
+*/
+.categories{
+    margin-bottom: 150px;
+
+}
+.categories-logo{
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 50px auto 30px;
+    box-shadow: 0 2px 40px 0 rgba(110,130,208,.18);
+
+}
+.categories-logo img{
+    width: 100px;
+    margin: 50px auto ;
+}
+.marque{
+
+    width: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba(0,0, 0, 0.2);
+    border-radius: 10px;
+    padding:25px 30px;
+    
+}
+
+.container-contact{
+    position:relative ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+.container-contact:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80%;
+    background: url(images/contact.jpg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(20px);
+
+}
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow:0px 0px 19px 5px rgba(0,0,0,0.19) ;
+} 
+.left{
+    height: 100%;
+    background: url(images/contact.jpg) no-repeat center;
+    background-size: cover;
+}
+.right{
+    padding: 25px 40px;
+}
+h2{
+padding-bottom: 10px;
+margin-bottom: 10px;
+position: relative;
+}
+h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color:#467b3e ;
+}
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0,0, 0);
+    padding: 0.5rem 1rem;
+    background-color: rgba(230,230,230,0.6) ;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 3s;
+}
+.field:hover{
+    background-color:rgba(0,0, 0, 0.1) ;
+}
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(20, 115, 69, 0.47);
+
+}
+.area{
+    min-height: 150px;
+
+}
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #27ae60;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #27ae60;
+    transition: 3s;
+}
+.btn:hover{
+    background-color: #27ae60;
+
+}
+@media screen and (max-width:880px) {
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height: 200px;
+        
+    }
+}
+.footer{
+    margin-top: 100px;
+    background: #c6d7c3;
+}
+.about-us{
+    margin: 50px auto;
+}
+.contactf{
+    margin: 50px auto;
+} 
+.services{
+    margin: 50px auto;  
+}
+
+
